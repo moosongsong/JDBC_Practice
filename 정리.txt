@@ -1,0 +1,8 @@
+(1) viewobject 패키지 + AppStart.java
+ --> 객체 만들 때 마다 Connect객체를 만들고 DB에 연결해야하는데, DB연결 시에
+	가장 시간이 많이 걸리기에 이를 보완해야 한다.
+(2) dataaccessobject 패키지 + AppStart2
+--> AppStart2와 dataaccessobject는 하나의 Connection으로 여러명이 여러 개의 작업을 수행하므로
+동기화가 필요하다.
+(3) AppStart3, AppStart4, + dataaccessobject2 패키지
+-->트랜젝션을 사용하려면 하나의 연결로 계속 작업을 해야한다.
